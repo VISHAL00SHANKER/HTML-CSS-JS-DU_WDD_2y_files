@@ -1,0 +1,39 @@
+<html> 
+<head>
+    <title>Document</title> 
+</head>
+
+    <script>
+    	function setcookies(name, value, time)
+	{
+        	document.cookie = name +"=" +value+ ";max-age = "+(time*24*60*60*1000); 
+	}
+    	function Checkcookie()
+	{
+        	var cookiearr = document.cookie.split(";"); var flag=0;
+        	if(cookiearr!=null && cookiearr!=" ")
+        	{
+            		for(var i=0; i<cookiearr.length; i++) 
+			{
+             			var value_arr= cookiearr[i].split("="); 
+
+				if(value_arr[0].trim()=='Firstname')
+            			{
+                			alert("Welcome Again ! "+ value_arr[1]); 
+					flag=1;
+            				break;
+                		} 
+            		}
+        	} 
+		if(flag==0) 
+		{
+         	   	Firstname=prompt("Enter your Name: "); alert("Welcome! "+Firstname); setcookies("Firstname ", Firstname,1);
+    		}
+	} 
+    </script>
+</head>
+
+	<body onload="Checkcookie()">
+		<h1 style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans- serif;">Welcome to JavaScript!!</h1>
+	</body>
+</html>
