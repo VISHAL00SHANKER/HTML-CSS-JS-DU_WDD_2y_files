@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<head>
+    <style>
+        #p1{
+        box-sizing:border-box;
+        margin-left:20px;
+        height:50px; 
+        width:300px; 
+        border:2px solid black; 
+        padding-left:10px; 
+        padding-top:10px; 
+        font-size:20px;
+        } 
+    </style> 
+</head>
+<body >
+    
+    <div id="background">
+        <label id="bglabel" for="settext" >Label</label><br>
+            <p id="p1">Content for the label in textbox</p> 
+        </div>
+    <script>
+    var doc = document.getElementById("background");
+            var color = ["aqua", "LightPink", "LightSkyBlue","coral","beige","green","yellow" ]; 
+            var i = 0;
+            function change() { 
+                doc.style.backgroundColor = color[i]; i++;
+                if(i > color.length - 1) {
+                    i = 0; }
+                } 
+    setInterval(change,2000) ;
+
+    function label_Change() {
+        document.getElementById('bglabel').style.fontSize="27px";
+        document.getElementById('bglabel').innerHTML="Content for label"; 
+    }
+    setTimeout(label_Change,3000);
+    </script> 
+</body>
+</html>
