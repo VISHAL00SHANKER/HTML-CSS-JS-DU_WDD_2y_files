@@ -1,1 +1,81 @@
-
+<html>
+<head>
+  <title>
+    html Form
+  </title>
+  <script defer src="script.js"></script> 
+</head>
+  <body bgcolor="orange"> 
+    <H1><center><b><u>STUDENT INFORMATION</u></b></center></H1> 
+    <div id="error"></div>
+    <form id="form" action="report.php" method="get">
+    <label>First Name : </label>
+    <input id="fname" type="text">
+    <br>
+    <br>
+    <label>Middle Name : </label>
+    <input id="mname" type="text">
+    <br>
+    <br>
+    <label>Last Name : </label>
+    <input id="lname"type="text">
+    <br>
+    <br>
+    <label>Roll number : </label>
+    <input id="rno" type="text">
+    <span></span>
+    <br>
+    <br>
+    <label>E-mail : </label>
+    <input id="email" type="text">
+    <span></span>
+    <br>
+    <br>
+    <label>Age : </label>
+    <input id="age" type="number">
+    <br>
+    <br>
+    <label>Gender : </label>
+    <input type="radio">Male
+    <input type="radio">Female
+    <input type="radio">Other
+    <br>
+    <br>
+    <label>Societies opted : </label>
+    <input type="checkbox">SUGAM
+    <input type="checkbox">SPIC MACAY
+    <input type="checkbox">HINDI DEBATING
+    <input type="checkbox">GANDHI STUDY CIRCLE
+    <input type="checkbox">CHITRA-PHOTOGRAPHY SOCIETY <input type="checkbox">NORTH EAST SOCIETY
+    <input type="checkbox">NCC and NSS
+    <input type="checkbox">ECO CLUB
+    <input type="checkbox">CREATIVE WRITING
+    <input type="checkbox">THE QUIZ SOCIETY
+    <input type="checkbox">EQUAL OPPORTUNITY CELL
+    <input type="checkbox">THE ANCHORING SOCIETY
+    <input type="checkbox">THE FINE ARTS SOCIETY
+    <input type="checkbox">MUSIC SOCIETY
+    <br>
+    <br>
+    <label>Course</label>
+    <select>
+    <option>--Select--</option>
+    <option>B.Sc</option>
+    <option>M.Sc</option>
+    <option>BMS</option>
+    <option>BCA</option>
+    <option>MCA</option>
+    <option>B.Ed</option>
+    </select> <br>
+    <br>
+    <label>Address : </label>
+    <textarea id="add" rows="5" cols="80"> </textarea>
+    <br>
+    <br>
+    <label for="img">Select image:</label>
+    <input type="file" id="img" name="img" accept="image/*"> <br>
+    <br>
+    <center><INPUT TYPE="submit" VALUE="Submit"> 
+        <INPUT TYPE="Reset" VALUE="Reset"></center> 
+  </body>
+</html>
