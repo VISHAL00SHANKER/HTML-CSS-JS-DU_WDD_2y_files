@@ -1,160 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ecommerce Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
-  </head>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PL JEWWLLERY</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src='main.js'></script>
+</head>
+<body>
+    <section id="Header">
+        <div1>
+          <a href="#"><img src="logo.png" class="logo" alt=""></a>
+        </div1> 
+  
+        <div2 >
+          <img src="headerimage2.png"></img>
+        </div2>
 
-  <body>
-    <section id="header">
-      <div>
-        <a href="#"><img src="logo.png" class="logo" alt=""></a>
-      </div> 
+        <div3>
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></div></a></li>
+          <li>
+            <link rel="stylesheet" href="sidenav.css">
+              <div id="mySidenav" class="sidenav leftdiv">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <a href="#">All Company</a>
+                  <a href="#">All Jobs</a>
+                  <a href="Feedback.html">Feedback</a>
+              </div>
+              <span  style="font-size:36px;cursor:pointer;color:rgb(227, 125, 8);margin-left:5%;" onclick="openNav()">&#9776;</span>
+              <script>
+                function openNav() 
+                {
+                      document.getElementById("mySidenav").style.width = "150px";
+                }
+        
+                function closeNav() 
+                {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+              </script>
+              <link rel="stylesheet" href="Button.css">
+          </li>
+        </ul>
+        </div3>
 
-      <div>
-      <ul id="navbar">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></div></a></li>
-      </ul>
-      </div>
-    </section>
-
-    <section id="hero">
-      <h1>  What's new! </h1>
-      <h2>  Deal you get to feel </h2>
-      <h3>  Save more with coupons & upto 70% off </h3>
-    </section>
-    
-    <section id="feature" class="section-p1">
-      <div class ="fe-box">
-        <img src="freeship.jpeg" alt="f1">
-        <h6>Free Shipping</h6>
-      </div>
-
-      <div class ="fe-box">
-        <img src="onlineshopping.jpg" alt="f1">
-        <h6>Online Order</h6>
-      </div>
-
-      <div class ="fe-box">
-        <img src="moneysaving.jpg" alt="f1">
-        <h6>Save Money</h6>
-      </div>
-
-      <div class ="fe-box">
-        <img src="promotion.jpg" alt="f1">
-        <h6>Promotions</h6>
-      </div>
-
-      <div class ="fe-box">
-        <img src="happysell.jpg" alt="f1">
-        <h6>Happy Sell</h6>
-      </div>
-
-      <div class ="fe-box">
-        <img src="24support.jpg" alt="f1">
-        <h6>24/7 Support</h6>
-      </div>
-    </section>
-
-    <section id="product" class="section-p1">
-      <h2>FEATURED PRODUCTS</h2>
-      <p>Summer Collection New Modern Design</p>
-      <div class="containerpro">
-        <div class="pro">
-          <img src="24karat.jpg" alt="p1">
-          <div class="describe">
-            <span>24 karat gold</span>
-            <h2>High Definition prodect</h2>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$60</h4>
-          </div>
-          <a href="#" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-        </div>
-
-        <div class="pro">
-          <img src="gemstone.jpg" alt="p1">
-          <div class="describe">
-            <span>24 GEMS</span>
-            <h2>High Definition prodect</h2>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$60</h4>
-          </div>
-          <a href="#" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-        </div>
-
-        <div class="pro">
-          <img src="bracelet.jpg" alt="p1">
-          <div class="describe">
-            <span>24 karat Bracelet</span>
-            <h2>High Definition prodect</h2>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$60</h4>
-          </div>
-          <a href="#" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-        </div>
-
-        <div class="pro">
-          <img src="100gsiver.jpg" alt="p1">
-          <div class="describe">
-            <span>100g SILVER</span>
-            <h2>High Definition prodect</h2>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>$60</h4>
-          </div>
-          <a href="#" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-        </div>
-      </div>
-    </section>
-       
-    <section id="banner" class="section-m1">
-      <i class="fa fa-arrow-down" aria-hidden="true"></i>
-      <button class="bt1">Explore More</button>
+        
     </section>
 
     <section>
+        <link rel="stylesheet" href="Slideshow.css">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="bracelet.jpg" style="width:100%;height:75vh;margin-left:0%;">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2/ 4</div>
+            <img src="product 2.jpeg" style=" width: 100%; height: 75vh; margin: 0%;">
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3/ 4</div>
+            <img src="bracelet.jpg" style="width:100%;height:75vh;margin-left:0%;">
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">4/ 4</div>
+            <img src="product4.jpeg" style="width:100%;height: 75vh;margin-left:0%;">
+          </div>
+        </div>
+          <div style="text-align:center">
+            <span class="dot"></span> 		
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+          </div>
+          <script>
+            let slideIndex = 0;
+            showSlides();
+            function showSlides()
+            {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++)
+              {
+                  slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++)
+              {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+          </script>
+    </section>
+
+    <section id="product" class="section-p1">
+        <h2>FEATURED PRODUCTS in ARTIFICIAL AMERICAN DIAMOND</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="containerpro">
+          <div class="pro">
+            <img src="product3.jpeg" alt="p1">
+            <div class="describe">
+              <span>American Diamond pearl</span>
+              <h2>OFFICE</h2>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$60</h4>
+            </div>
+            <a href="#" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+          </div>
+  
+          <div class="pro">
+            <img src="product 2.jpeg" alt="p1">
+            <div class="describe">
+              <span>PENDANT SET</span>
+              <h2>PARTIES</h2>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$60</h4>
+            </div>
+            <a href="#" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+          </div>
+  
+          <div class="pro">
+            <img src="product4.jpeg" alt="p1">
+            <div class="describe">
+              <span>Earing Set</span>
+              <h2>OCCASION</h2>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$60</h4>
+            </div>
+            <a href="#" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+          </div>
+  
+          <div class="pro">
+            <img src="product1.jpeg" alt="p1">
+            <div class="describe">
+              <span>BRASS AMERICAN DIAMOND</span>
+              <h2>DAILYWEAR</h2>
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <h4>$60</h4>
+            </div>
+            <a href="#" ><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+          </div>
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        <button class="bt1">Explore More</button>
+    </section>
+  
+    
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up For Newsletter</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+      </div>
+      <div6 class="form " >
+        <input type="text" placeholder="Your email address">
+        <button>Sign Up</button>
+      </div6>
+    </section>
+
+    <section id="contact">
       <div class = "leftdiv">
         <p class = "p3">
-        Contact Us: 
+        <b>Contact Us:</b> 
         </p>
         <p>
         Address:- &nbsp;  xxx srinivas heights ground floor singareny colony hyderabad , telangana-xxx059<br>
          Telephone No. :-&nbsp;  88xxxx3853 , 011-24112151(FAX)&nbsp;&nbsp; ,&nbsp; Gmail ID :- &nbsp; xxx@gmail.com
         </p>
         </div>
-    </section>
-  </body>
 
+        <section>
+            <table cellpadding="50pt">
+            <tr>
+
+            <td><a href="https://instagram.com/p_l_vishal?igshid=NTdlMDg3MTY="><img src="insta.png" width=90px ></a></td>
+                      
+            <td><a href="https://github.com/VISHAL00SHANKER"><img src="github.png" width=90px ></a></td>
+                          
+            <td><a href="vishalshanker123@gmail.com"><img src="gmial.png" width=90px></a></td>
+        
+            <td><a href="https://www.linkedin.com/in/vishapl-88rla99cs"><img src="linkdin.png" width=90px></a></td>
+        
+            </tr>
+        </section>
+    </section>
+
+</body>
 </html>
